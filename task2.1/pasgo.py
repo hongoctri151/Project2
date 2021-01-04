@@ -23,8 +23,8 @@ def crawl(link,number):
     # # #condition stop
     if len(title) > 1000:
         return 0
-    elif int(number)>18:
-        return 0
+    elif int(number)>18:    
+        return 0   
     else:
         return crawl(link,str(int(number)+1))
 
